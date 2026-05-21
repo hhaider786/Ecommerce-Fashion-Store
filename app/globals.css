@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-cormorant: var(--font-cormorant-var);
+  --font-dm-sans: var(--font-dm-sans-var);
+}
+
+html { scroll-behavior: smooth; }
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.btn-dark {
+  background: #111111;
+  color: #ffffff;
+  transition: background 0.25s;
+}
+.btn-dark:hover { background: #2a2a2a; }
+
+.btn-outline {
+  border: 1px solid #111111;
+  color: #111111;
+  transition: background 0.25s, color 0.25s;
+}
+.btn-outline:hover { background: #111111; color: #ffffff; }
+
+.section-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #888888;
+  font-weight: 500;
+}
+
+.marquee-track {
+  animation: marquee 35s linear infinite;
+  display: flex;
+  width: max-content;
+}
