@@ -24,7 +24,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
       <body
-        className="bg-white text-[#111] antialiased overflow-x-hidden"
+        className="bg-white text-[#111] antialiased overflow-x-clip"
         style={{ fontFamily: "var(--font-dm-sans-var), sans-serif" }}
       >
         <CartProvider>{children}</CartProvider>
