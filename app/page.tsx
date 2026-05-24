@@ -9,15 +9,17 @@ import CartDrawer from "@/components/CartDrawer";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Navigation />
       <CartDrawer />
-      <Hero />
-      <Categories />
-      <ProductGrid />
-      <Testimonials />
-      <Newsletter />
+      <main id="main">
+        <Hero />
+        <Categories />
+        <ProductGrid />
+        <Testimonials />
+        <Newsletter />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
